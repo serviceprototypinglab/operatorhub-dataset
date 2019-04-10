@@ -1,0 +1,122 @@
+{
+  "capabilities": {
+    "AWS Service Operator": "Basic Install",
+    "Couchbase Operator": "Full Lifecycle",
+    "Jaeger Tracing": "Seamless Upgrades",
+    "Kubernetes Federation": "Basic Install",
+    "MongoDB": "Full Lifecycle",
+    "Percona Xtradb Cluster Operator": "Full Lifecycle",
+    "PlanetScale Operator": "Basic Install",
+    "PostgreSQL Enterprise": "Seamless Upgrades",
+    "Prometheus Operator": "Full Lifecycle",
+    "Redis Enterprise": "Full Lifecycle",
+    "Strimzi Kafka": "Basic Install",
+    "etcd": "Full Lifecycle"
+  },
+  "capabilityLevels": {
+    "Basic Install": 4,
+    "Full Lifecycle": 6,
+    "Seamless Upgrades": 2
+  },
+  "capabilityScore": {
+    "max": 2,
+    "mean": 1.167,
+    "median": 2,
+    "min": 0
+  },
+  "categories": {
+    "Cloud Provider": 1,
+    "Database": 7,
+    "Integration & Delivery": 1,
+    "Logging & Tracing": 1,
+    "Monitoring": 1,
+    "OpenShift Optional": 1,
+    "Streaming & Messaging": 1
+  },
+  "issues": {
+    "inconsistencies": [
+      {
+        "prometheusoperator-community": [
+          "Prometheus",
+          "Prometheus Operator"
+        ]
+      }
+    ],
+    "multiple": [
+      "couchbase-operator",
+      "etcdoperator-community",
+      "etcdoperator-community",
+      "prometheusoperator-community"
+    ],
+    "nomaintainer": [
+      "federationv2-community",
+      "percona-xtradb-cluster-operator-community"
+    ]
+  },
+  "maintainerScore": 0.833,
+  "meta": {
+    "count-names-total": 17,
+    "count-names-unique": 13,
+    "names-total": [
+      "AWS Service Operator",
+      "Couchbase Operator",
+      "Couchbase Operator",
+      "Jaeger Tracing",
+      "Kubernetes Federation",
+      "MongoDB",
+      "Percona Xtradb Cluster Operator",
+      "PlanetScale Operator",
+      "PostgreSQL Enterprise",
+      "Prometheus",
+      "Prometheus",
+      "Prometheus Operator",
+      "Redis Enterprise",
+      "Strimzi Kafka",
+      "etcd",
+      "etcd",
+      "etcd"
+    ],
+    "names-unique": [
+      "AWS Service Operator",
+      "Couchbase Operator",
+      "Jaeger Tracing",
+      "Kubernetes Federation",
+      "MongoDB",
+      "Percona Xtradb Cluster Operator",
+      "PlanetScale Operator",
+      "PostgreSQL Enterprise",
+      "Prometheus",
+      "Prometheus Operator",
+      "Redis Enterprise",
+      "Strimzi Kafka",
+      "etcd"
+    ]
+  },
+  "stats": {
+    "count-operators-global": 7,
+    "count-providers-total": 10,
+    "operators-global": [
+      "AWS Service Operator",
+      "Jaeger Tracing",
+      "Kubernetes Federation",
+      "MongoDB",
+      "PostgreSQL Enterprise",
+      "Redis Enterprise",
+      "Strimzi Kafka"
+    ],
+    "providers-total": [
+      "Amazon Web Services, Inc.",
+      "CNCF",
+      "Couchbase",
+      "Crunchy Data Solutions, Inc.",
+      "Jaeger",
+      "MongoDB, Inc",
+      "Percona",
+      "PlanetScale",
+      "Red Hat",
+      "Red Hat",
+      "Red Hat",
+      "Redis Labs, Inc"
+    ]
+  }
+}
