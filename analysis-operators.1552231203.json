@@ -34,6 +34,66 @@
     "OpenShift Optional": 2,
     "Streaming & Messaging": 1
   },
+  "crdScore": {
+    "mean": 5.154,
+    "sum": 67
+  },
+  "crds": {
+    "AWS Service Operator": 8,
+    "Couchbase Operator": 1,
+    "Dynatrace OneAgent": 1,
+    "Jaeger Tracing": 1,
+    "Kubernetes Federation": 30,
+    "MongoDB": 3,
+    "Percona Xtradb Cluster Operator": 2,
+    "PlanetScale Operator": 1,
+    "PostgreSQL Enterprise": 6,
+    "Prometheus Operator": 4,
+    "Redis Enterprise": 1,
+    "Strimzi Kafka": 6,
+    "etcd": 3
+  },
+  "install": {
+    "AWS Service Operator": [
+      "https://operatorhub.io/install/alpha/aws-service-operator.v0.0.1.yaml"
+    ],
+    "Couchbase Operator": [
+      "https://operatorhub.io/install/preview/couchbase-operator.v1.1.0.yaml"
+    ],
+    "Dynatrace OneAgent": [
+      "https://operatorhub.io/install/alpha/dynatrace-monitoring.v0.2.0.yaml"
+    ],
+    "Jaeger Tracing": [
+      "https://operatorhub.io/install/alpha/jaeger-operator.v1.8.2.yaml"
+    ],
+    "Kubernetes Federation": [
+      "https://operatorhub.io/install/alpha/federationv2-community.v0.0.2.yaml"
+    ],
+    "MongoDB": [
+      "https://operatorhub.io/install/preview/mongodboperator.v0.3.2.yaml"
+    ],
+    "Percona Xtradb Cluster Operator": [
+      "https://operatorhub.io/install/alpha/percona-xtradb-cluster-operator-community.v0.3.0-rc1.yaml"
+    ],
+    "PlanetScale Operator": [
+      "https://operatorhub.io/install/alpha/planetscale-operator-community.v0.1.7.yaml"
+    ],
+    "PostgreSQL Enterprise": [
+      "https://operatorhub.io/install/alpha/postgres-operator.v3.5.0.yaml"
+    ],
+    "Prometheus Operator": [
+      "https://operatorhub.io/install/preview/prometheusoperator-community.0.22.2.yaml"
+    ],
+    "Redis Enterprise": [
+      "https://operatorhub.io/install/alpha/redis-enterprise-operator.v0.0.1.yaml"
+    ],
+    "Strimzi Kafka": [
+      "https://operatorhub.io/install/stable/strimzi-cluster-operator.v0.11.1.yaml"
+    ],
+    "etcd": [
+      "https://operatorhub.io/install/alpha/etcdoperator-community.v0.9.2.yaml"
+    ]
+  },
   "issues": {
     "inconsistencies": [
       {

@@ -1,62 +1,79 @@
 {
   "capabilities": {
     "AWS Service Operator": "Basic Install",
+    "CockroachDB": "Basic Install",
     "Couchbase Operator": "Full Lifecycle",
     "Crunchy PostgreSQL": "Seamless Upgrades",
     "Dynatrace OneAgent": "Basic Install",
     "Federation": "Basic Install",
-    "Jaeger Tracing": "Seamless Upgrades",
+    "Hazelcast Operator": "Basic Install",
+    "Istio": "Full Lifecycle",
+    "Microcks Operator": "Basic Install",
     "MongoDB": "Full Lifecycle",
     "Percona Xtradb Cluster Operator": "Full Lifecycle",
     "PlanetScale Operator for Vitess": "Deep Insights",
     "Prometheus Operator": "Full Lifecycle",
     "Redis Enterprise": "Full Lifecycle",
+    "StorageOS": "Full Lifecycle",
     "Strimzi Kafka": "Seamless Upgrades",
-    "etcd": "Full Lifecycle"
+    "Vault Operator": "Full Lifecycle",
+    "etcd": "Full Lifecycle",
+    "jaeger-operator": "Seamless Upgrades"
   },
   "capabilityLevels": {
-    "Basic Install": 3,
+    "Basic Install": 6,
     "Deep Insights": 1,
-    "Full Lifecycle": 6,
+    "Full Lifecycle": 9,
     "Seamless Upgrades": 3
   },
   "capabilityScore": {
     "max": 3,
-    "mean": 1.385,
+    "mean": 1.263,
     "median": 2,
     "min": 0
   },
   "categories": {
     "Cloud Provider": 1,
-    "Database": 7,
-    "Integration & Delivery": 1,
-    "Logging & Tracing": 1,
-    "Monitoring": 2,
+    "Database": 9,
+    "Integration & Delivery": 2,
+    "Logging & Tracing": 2,
+    "Monitoring": 3,
     "OpenShift Optional": 3,
+    "Security": 2,
+    "Storage": 1,
     "Streaming & Messaging": 1
   },
   "crdScore": {
-    "mean": 3.615,
-    "sum": 47
+    "mean": 2.947,
+    "sum": 56
   },
   "crds": {
     "AWS Service Operator": 8,
+    "CockroachDB": 1,
     "Couchbase Operator": 1,
     "Crunchy PostgreSQL": 6,
     "Dynatrace OneAgent": 1,
     "Federation": 10,
-    "Jaeger Tracing": 1,
+    "Hazelcast Operator": 1,
+    "Istio": 2,
+    "Microcks Operator": 1,
     "MongoDB": 3,
     "Percona Xtradb Cluster Operator": 2,
     "PlanetScale Operator for Vitess": 1,
     "Prometheus Operator": 4,
     "Redis Enterprise": 1,
+    "StorageOS": 3,
     "Strimzi Kafka": 6,
-    "etcd": 3
+    "Vault Operator": 1,
+    "etcd": 3,
+    "jaeger-operator": 1
   },
   "install": {
     "AWS Service Operator": [
       "https://operatorhub.io/install/alpha/aws-service-operator.v0.0.1.yaml"
+    ],
+    "CockroachDB": [
+      "https://operatorhub.io/install/stable/cockroachdb.v2.0.9.yaml"
     ],
     "Couchbase Operator": [
       "https://operatorhub.io/install/preview/couchbase-operator.v1.1.0.yaml"
@@ -68,13 +85,19 @@
       "https://operatorhub.io/install/alpha/dynatrace-monitoring.v0.2.0.yaml"
     ],
     "Federation": [
-      "https://operatorhub.io/install/alpha/federation.v0.0.6.yaml"
+      "https://operatorhub.io/install/alpha/federation.v0.0.7.yaml"
     ],
-    "Jaeger Tracing": [
-      "https://operatorhub.io/install/alpha/jaeger-operator.v1.8.2.yaml"
+    "Hazelcast Operator": [
+      "https://operatorhub.io/install/alpha/hazelcast-operator.v0.0.1.yaml"
+    ],
+    "Istio": [
+      "https://operatorhub.io/install/beta/istio-operator.0.1.6.yaml"
+    ],
+    "Microcks Operator": [
+      "https://operatorhub.io/install/alpha/microcks-operator.v0.2.0.yaml"
     ],
     "MongoDB": [
-      "https://operatorhub.io/install/preview/mongodboperator.v0.3.2.yaml"
+      "https://operatorhub.io/install/preview/mongodboperator.v0.9.0.yaml"
     ],
     "Percona Xtradb Cluster Operator": [
       "https://operatorhub.io/install/alpha/percona-xtradb-cluster-operator-community.v0.3.0-rc1.yaml"
@@ -88,109 +111,112 @@
     "Redis Enterprise": [
       "https://operatorhub.io/install/alpha/redis-enterprise-operator.v0.0.1.yaml"
     ],
+    "StorageOS": [
+      "https://operatorhub.io/install/stable/storageosoperator.v1.0.0.yaml"
+    ],
     "Strimzi Kafka": [
       "https://operatorhub.io/install/stable/strimzi-cluster-operator.v0.11.1.yaml"
     ],
+    "Vault Operator": [
+      "https://operatorhub.io/install/beta/vaultoperator.v0.4.10.yaml"
+    ],
     "etcd": [
-      "https://operatorhub.io/install/alpha/etcdoperator-community.v0.9.2.yaml"
+      "https://operatorhub.io/install/singlenamespace-alpha/etcdoperator.v0.9.4.yaml",
+      "https://operatorhub.io/install/clusterwide-alpha/etcdoperator.v0.9.4-clusterwide.yaml"
+    ],
+    "jaeger-operator": [
+      "https://operatorhub.io/install/alpha/jaeger-operator.v1.11.0.yaml"
     ]
   },
   "issues": {
-    "inconsistencies": [
-      {
-        "planetscale-operator": [
-          "PlanetScale Operator",
-          "PlanetScale Operator for Vitess"
-        ]
-      },
-      {
-        "prometheusoperator-community": [
-          "Prometheus",
-          "Prometheus Operator"
-        ]
-      }
-    ],
-    "multiple": [
-      "couchbase-operator",
-      "etcdoperator-community",
-      "etcdoperator-community",
-      "prometheusoperator-community",
-      "strimzi-cluster-operator"
-    ],
     "nomaintainer": [
       "federation",
       "percona-xtradb-cluster-operator-community"
     ]
   },
-  "maintainerScore": 0.846,
+  "maintainerScore": 0.895,
   "meta": {
-    "count-names-total": 20,
-    "count-names-unique": 15,
+    "count-names-total": 19,
+    "count-names-unique": 19,
     "names-total": [
       "AWS Service Operator",
-      "Couchbase Operator",
+      "CockroachDB",
       "Couchbase Operator",
       "Crunchy PostgreSQL",
       "Dynatrace OneAgent",
       "Federation",
-      "Jaeger Tracing",
+      "Hazelcast Operator",
+      "Istio",
+      "Microcks Operator",
       "MongoDB",
       "Percona Xtradb Cluster Operator",
-      "PlanetScale Operator",
       "PlanetScale Operator for Vitess",
-      "Prometheus",
-      "Prometheus",
       "Prometheus Operator",
       "Redis Enterprise",
+      "StorageOS",
       "Strimzi Kafka",
-      "Strimzi Kafka",
+      "Vault Operator",
       "etcd",
-      "etcd",
-      "etcd"
+      "jaeger-operator"
     ],
     "names-unique": [
       "AWS Service Operator",
+      "CockroachDB",
       "Couchbase Operator",
       "Crunchy PostgreSQL",
       "Dynatrace OneAgent",
       "Federation",
-      "Jaeger Tracing",
+      "Hazelcast Operator",
+      "Istio",
+      "Microcks Operator",
       "MongoDB",
       "Percona Xtradb Cluster Operator",
-      "PlanetScale Operator",
       "PlanetScale Operator for Vitess",
-      "Prometheus",
       "Prometheus Operator",
       "Redis Enterprise",
+      "StorageOS",
       "Strimzi Kafka",
-      "etcd"
+      "Vault Operator",
+      "etcd",
+      "jaeger-operator"
     ]
   },
   "stats": {
-    "count-operators-global": 6,
-    "count-providers-total": 11,
+    "count-operators-global": 11,
+    "count-providers-total": 15,
     "operators-global": [
       "AWS Service Operator",
+      "CockroachDB",
       "Crunchy PostgreSQL",
-      "Jaeger Tracing",
+      "Hazelcast Operator",
+      "Istio",
       "MongoDB",
       "Redis Enterprise",
-      "Strimzi Kafka"
+      "StorageOS",
+      "Strimzi Kafka",
+      "etcd",
+      "jaeger-operator"
     ],
     "providers-total": [
       "Amazon Web Services, Inc.",
+      "Banzai Cloud",
+      "Banzai Cloud",
+      "CNCF",
       "CNCF",
       "Couchbase",
       "Crunchy Data Solutions, Inc.",
       "Dynatrace LLC",
-      "Jaeger",
+      "Hazelcast, Inc",
+      "Helm Community",
+      "Microcks.io",
       "MongoDB, Inc",
       "Percona",
       "PlanetScale",
       "Red Hat",
       "Red Hat",
       "Red Hat",
-      "Redis Labs, Inc"
+      "Redis Labs, Inc",
+      "StorageOS, Inc"
     ]
   }
 }

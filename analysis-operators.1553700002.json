@@ -38,6 +38,74 @@
     "Security": 1,
     "Streaming & Messaging": 1
   },
+  "crdScore": {
+    "mean": 3.267,
+    "sum": 49
+  },
+  "crds": {
+    "AWS Service Operator": 8,
+    "CockroachDB": 1,
+    "Couchbase Operator": 1,
+    "Crunchy PostgreSQL": 6,
+    "Dynatrace OneAgent": 1,
+    "Federation": 10,
+    "Jaeger Tracing": 1,
+    "MongoDB": 3,
+    "Percona Xtradb Cluster Operator": 2,
+    "PlanetScale Operator for Vitess": 1,
+    "Prometheus Operator": 4,
+    "Redis Enterprise": 1,
+    "Strimzi Kafka": 6,
+    "Vault Operator": 1,
+    "etcd": 3
+  },
+  "install": {
+    "AWS Service Operator": [
+      "https://operatorhub.io/install/alpha/aws-service-operator.v0.0.1.yaml"
+    ],
+    "CockroachDB": [
+      "https://operatorhub.io/install/stable/cockroachdb.v2.0.9.yaml"
+    ],
+    "Couchbase Operator": [
+      "https://operatorhub.io/install/preview/couchbase-operator.v1.1.0.yaml"
+    ],
+    "Crunchy PostgreSQL": [
+      "https://operatorhub.io/install/alpha/postgres-operator.v3.5.0.yaml"
+    ],
+    "Dynatrace OneAgent": [
+      "https://operatorhub.io/install/alpha/dynatrace-monitoring.v0.2.0.yaml"
+    ],
+    "Federation": [
+      "https://operatorhub.io/install/alpha/federation.v0.0.6.yaml"
+    ],
+    "Jaeger Tracing": [
+      "https://operatorhub.io/install/alpha/jaeger-operator.v1.8.2.yaml"
+    ],
+    "MongoDB": [
+      "https://operatorhub.io/install/preview/mongodboperator.v0.3.2.yaml"
+    ],
+    "Percona Xtradb Cluster Operator": [
+      "https://operatorhub.io/install/alpha/percona-xtradb-cluster-operator-community.v0.3.0-rc1.yaml"
+    ],
+    "PlanetScale Operator for Vitess": [
+      "https://operatorhub.io/install/beta/planetscale-operator.v0.1.8.yaml"
+    ],
+    "Prometheus Operator": [
+      "https://operatorhub.io/install/preview/prometheusoperator-community.0.22.2.yaml"
+    ],
+    "Redis Enterprise": [
+      "https://operatorhub.io/install/alpha/redis-enterprise-operator.v0.0.1.yaml"
+    ],
+    "Strimzi Kafka": [
+      "https://operatorhub.io/install/stable/strimzi-cluster-operator.v0.11.1.yaml"
+    ],
+    "Vault Operator": [
+      "https://operatorhub.io/install/beta/vaultoperator.v0.4.10.yaml"
+    ],
+    "etcd": [
+      "https://operatorhub.io/install/alpha/etcdoperator-community.v0.9.2.yaml"
+    ]
+  },
   "issues": {
     "nomaintainer": [
       "federation",
