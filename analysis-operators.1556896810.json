@@ -1,0 +1,308 @@
+{
+  "capabilities": {
+    "AWS Service Operator": "Basic Install",
+    "Aqua Security Operator": "Basic Install",
+    "CockroachDB": "Basic Install",
+    "Community Jaeger Operator": "Seamless Upgrades",
+    "Couchbase Operator": "Full Lifecycle",
+    "Crunchy PostgreSQL Enterprise": "Full Lifecycle",
+    "Dynatrace OneAgent": "Basic Install",
+    "Federation": "Basic Install",
+    "FederatorAI": "Full Lifecycle",
+    "Hazelcast Operator": "Basic Install",
+    "Instana Agent Operator": "Basic Install",
+    "Istio": "Full Lifecycle",
+    "Kiali Operator": "Basic Install",
+    "Microcks Operator": "Basic Install",
+    "MongoDB": "Full Lifecycle",
+    "MyVirtualDirectory": "Full Lifecycle",
+    "Opsmx Spinnaker Operator": "Basic Install",
+    "Percona Xtradb Cluster Operator": "Full Lifecycle",
+    "PlanetScale Operator for Vitess": "Deep Insights",
+    "Prometheus Operator": "Seamless Upgrades",
+    "Redis Enterprise": "Full Lifecycle",
+    "Spark Operator": "Basic Install",
+    "Spinnaker Operator": "Basic Install",
+    "StorageOS": "Full Lifecycle",
+    "Strimzi Kafka": "Seamless Upgrades",
+    "Sysdig Agent Operator": "Basic Install",
+    "Vault Operator": "Full Lifecycle",
+    "etcd": "Full Lifecycle",
+    "infinispan": "Basic Install"
+  },
+  "capabilityLevels": {
+    "Basic Install": 14,
+    "Deep Insights": 1,
+    "Full Lifecycle": 11,
+    "Seamless Upgrades": 3
+  },
+  "capabilityScore": {
+    "max": 3,
+    "mean": 0.966,
+    "median": 1,
+    "min": 0
+  },
+  "categories": {
+    "AI/Machine Learning": 1,
+    "Big Data": 1,
+    "Cloud Provider": 1,
+    "Database": 10,
+    "Integration & Delivery": 4,
+    "Logging & Tracing": 3,
+    "Monitoring": 6,
+    "OpenShift Optional": 4,
+    "Security": 5,
+    "Storage": 1,
+    "Streaming & Messaging": 1
+  },
+  "crdScore": {
+    "mean": 2.517,
+    "sum": 73
+  },
+  "crds": {
+    "AWS Service Operator": 8,
+    "Aqua Security Operator": 6,
+    "CockroachDB": 1,
+    "Community Jaeger Operator": 1,
+    "Couchbase Operator": 1,
+    "Crunchy PostgreSQL Enterprise": 6,
+    "Dynatrace OneAgent": 1,
+    "Federation": 11,
+    "FederatorAI": 1,
+    "Hazelcast Operator": 1,
+    "Instana Agent Operator": 1,
+    "Istio": 2,
+    "Kiali Operator": 1,
+    "Microcks Operator": 1,
+    "MongoDB": 3,
+    "MyVirtualDirectory": 1,
+    "Opsmx Spinnaker Operator": 1,
+    "Percona Xtradb Cluster Operator": 2,
+    "PlanetScale Operator for Vitess": 1,
+    "Prometheus Operator": 4,
+    "Redis Enterprise": 1,
+    "Spark Operator": 2,
+    "Spinnaker Operator": 1,
+    "StorageOS": 3,
+    "Strimzi Kafka": 6,
+    "Sysdig Agent Operator": 1,
+    "Vault Operator": 1,
+    "etcd": 3,
+    "infinispan": 1
+  },
+  "install": {
+    "AWS Service Operator": [
+      "https://operatorhub.io/install/alpha/aws-service-operator.v0.0.1.yaml"
+    ],
+    "Aqua Security Operator": [
+      "https://operatorhub.io/install/alpha/aqua-operator.v0.0.1.yaml"
+    ],
+    "CockroachDB": [
+      "https://operatorhub.io/install/stable/cockroachdb.v2.1.1.yaml"
+    ],
+    "Community Jaeger Operator": [
+      "https://operatorhub.io/install/alpha/jaeger-operator.v1.11.1.yaml"
+    ],
+    "Couchbase Operator": [
+      "https://operatorhub.io/install/preview/couchbase-operator.v1.1.0.yaml"
+    ],
+    "Crunchy PostgreSQL Enterprise": [
+      "https://operatorhub.io/install/alpha/postgres-operator.v3.5.0.yaml"
+    ],
+    "Dynatrace OneAgent": [
+      "https://operatorhub.io/install/alpha/dynatrace-monitoring.v0.2.0.yaml"
+    ],
+    "Federation": [
+      "https://operatorhub.io/install/alpha/federation.v0.0.8.yaml"
+    ],
+    "FederatorAI": [
+      "https://operatorhub.io/install/alpha/federatorai.v0.1.0.yaml"
+    ],
+    "Hazelcast Operator": [
+      "https://operatorhub.io/install/alpha/hazelcast-operator.v0.0.1.yaml"
+    ],
+    "Instana Agent Operator": [
+      "https://operatorhub.io/install/alpha/instana-agent-operator.v0.0.1.yaml"
+    ],
+    "Istio": [
+      "https://operatorhub.io/install/beta/istio-operator.0.1.6.yaml"
+    ],
+    "Kiali Operator": [
+      "https://operatorhub.io/install/alpha/kiali-operator.v0.18.1.yaml"
+    ],
+    "Microcks Operator": [
+      "https://operatorhub.io/install/alpha/microcks-operator.v0.2.0.yaml"
+    ],
+    "MongoDB": [
+      "https://operatorhub.io/install/preview/mongodboperator.v0.9.0.yaml"
+    ],
+    "MyVirtualDirectory": [
+      "https://operatorhub.io/install/beta/myvirtualdirectory.1.0.0.yaml"
+    ],
+    "Opsmx Spinnaker Operator": [
+      "https://operatorhub.io/install/alpha/opsmx-spinnaker-operator.v1.13.1.yaml"
+    ],
+    "Percona Xtradb Cluster Operator": [
+      "https://operatorhub.io/install/alpha/percona-xtradb-cluster-operator-community.v0.3.0-rc1.yaml"
+    ],
+    "PlanetScale Operator for Vitess": [
+      "https://operatorhub.io/install/beta/planetscale-operator.v0.1.8.yaml"
+    ],
+    "Prometheus Operator": [
+      "https://operatorhub.io/install/beta/prometheusoperator.0.27.0.yaml"
+    ],
+    "Redis Enterprise": [
+      "https://operatorhub.io/install/alpha/redis-enterprise-operator.v0.0.1.yaml"
+    ],
+    "Spark Operator": [
+      "https://operatorhub.io/install/alpha/sparkoperator.v2.4.0.yaml"
+    ],
+    "Spinnaker Operator": [
+      "https://operatorhub.io/install/alpha/spinnaker-operator.v1.13.1.yaml"
+    ],
+    "StorageOS": [
+      "https://operatorhub.io/install/stable/storageosoperator.v1.1.0.yaml"
+    ],
+    "Strimzi Kafka": [
+      "https://operatorhub.io/install/stable/strimzi-cluster-operator.v0.11.1.yaml"
+    ],
+    "Sysdig Agent Operator": [
+      "https://operatorhub.io/install/stable/sysdig-operator.v1.4.0.yaml"
+    ],
+    "Vault Operator": [
+      "https://operatorhub.io/install/beta/vaultoperator.v0.4.10.yaml"
+    ],
+    "etcd": [
+      "https://operatorhub.io/install/singlenamespace-alpha/etcdoperator.v0.9.4.yaml",
+      "https://operatorhub.io/install/clusterwide-alpha/etcdoperator.v0.9.4-clusterwide.yaml"
+    ],
+    "infinispan": [
+      "https://operatorhub.io/install/alpha/infinispan-operator.v0.2.1.yaml"
+    ]
+  },
+  "issues": {
+    "nomaintainer": [
+      "federation",
+      "sparkoperator"
+    ]
+  },
+  "maintainerScore": 0.931,
+  "meta": {
+    "count-names-total": 29,
+    "count-names-unique": 29,
+    "names-total": [
+      "AWS Service Operator",
+      "Aqua Security Operator",
+      "CockroachDB",
+      "Community Jaeger Operator",
+      "Couchbase Operator",
+      "Crunchy PostgreSQL Enterprise",
+      "Dynatrace OneAgent",
+      "Federation",
+      "FederatorAI",
+      "Hazelcast Operator",
+      "Instana Agent Operator",
+      "Istio",
+      "Kiali Operator",
+      "Microcks Operator",
+      "MongoDB",
+      "MyVirtualDirectory",
+      "Opsmx Spinnaker Operator",
+      "Percona Xtradb Cluster Operator",
+      "PlanetScale Operator for Vitess",
+      "Prometheus Operator",
+      "Redis Enterprise",
+      "Spark Operator",
+      "Spinnaker Operator",
+      "StorageOS",
+      "Strimzi Kafka",
+      "Sysdig Agent Operator",
+      "Vault Operator",
+      "etcd",
+      "infinispan"
+    ],
+    "names-unique": [
+      "AWS Service Operator",
+      "Aqua Security Operator",
+      "CockroachDB",
+      "Community Jaeger Operator",
+      "Couchbase Operator",
+      "Crunchy PostgreSQL Enterprise",
+      "Dynatrace OneAgent",
+      "Federation",
+      "FederatorAI",
+      "Hazelcast Operator",
+      "Instana Agent Operator",
+      "Istio",
+      "Kiali Operator",
+      "Microcks Operator",
+      "MongoDB",
+      "MyVirtualDirectory",
+      "Opsmx Spinnaker Operator",
+      "Percona Xtradb Cluster Operator",
+      "PlanetScale Operator for Vitess",
+      "Prometheus Operator",
+      "Redis Enterprise",
+      "Spark Operator",
+      "Spinnaker Operator",
+      "StorageOS",
+      "Strimzi Kafka",
+      "Sysdig Agent Operator",
+      "Vault Operator",
+      "etcd",
+      "infinispan"
+    ]
+  },
+  "stats": {
+    "count-operators-global": 15,
+    "count-providers-total": 24,
+    "operators-global": [
+      "AWS Service Operator",
+      "CockroachDB",
+      "Community Jaeger Operator",
+      "Crunchy PostgreSQL Enterprise",
+      "FederatorAI",
+      "Hazelcast Operator",
+      "Instana Agent Operator",
+      "Istio",
+      "MongoDB",
+      "Opsmx Spinnaker Operator",
+      "Redis Enterprise",
+      "Spinnaker Operator",
+      "StorageOS",
+      "Strimzi Kafka",
+      "etcd"
+    ],
+    "providers-total": [
+      "Amazon Web Services, Inc.",
+      "Aqua Security, Inc.",
+      "Banzai Cloud",
+      "Banzai Cloud",
+      "CNCF",
+      "CNCF",
+      "Couchbase",
+      "Crunchy Data",
+      "Dynatrace LLC",
+      "GoogleCloudPlatform",
+      "Hazelcast, Inc",
+      "Helm Community",
+      "Infinispan",
+      "Instana",
+      "Kiali",
+      "Microcks.io",
+      "MongoDB, Inc",
+      "OpsMx",
+      "OpsMx",
+      "Percona",
+      "PlanetScale",
+      "ProphetStor Data Services, Inc.",
+      "Red Hat",
+      "Red Hat",
+      "Red Hat",
+      "Redis Labs, Inc",
+      "StorageOS, Inc",
+      "Sysdig",
+      "Tremolo Security, Inc."
+    ]
+  }
+}
